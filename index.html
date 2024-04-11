@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+    <style>
+        /* Estilos CSS para a visualização da fila */
+        .client {
+            margin-bottom: 5px;
+            padding: 5px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="user-icon"></span>
+        <legend>Insira cliente na fila</legend>
+        <input type="text" id="numero" placeholder="Nome do Cliente"><br>
+        <label for="colorPicker">Escolha uma cor:</label>
+        <input type="color" id="colorPicker"><br>
+        <!-- Botão para adicionar cliente à fila -->
+        <button onclick="addToQueue()">Adicionar à Fila</button>
+        <button onclick="removeFromQueue()">Terminar Atendimento</button>
+        <div id="queue"></div>
+    </div>
+
+    <script src="queue.js"></script>
+</body>
+</html>
